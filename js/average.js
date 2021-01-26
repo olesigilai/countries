@@ -7,11 +7,11 @@ const fetchData = async () => {
 
       catName.forEach(breed => {
         weight = ""
-        breed.weight.forEach(weights => {
-            weight += weights.name + ", "
+        breed.weight.metric.forEach(weights => {
+            weight.metric += weights+ ", "
         })
 
-        console.log(breed.name )
+        console.log(breed.weights )/breed
     })
 
     } catch (err) {
